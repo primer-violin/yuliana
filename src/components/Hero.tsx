@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
         <div className="hero-image-container animate-fade-in">
           <div className="hero-image-wrapper">
             <img
-              src="/hero_violin_asset.png"
+              src="hero_violin_asset.png"
               alt="Violín clásico de la academia italiana"
               className="hero-image"
             />

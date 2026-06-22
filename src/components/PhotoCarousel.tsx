@@ -10,22 +10,22 @@ interface Slide {
 export const PhotoCarousel: React.FC = () => {
   const slides: Slide[] = [
     {
-      url: '/media__1782154465074.jpg',
+      url: 'media__1782154465074.jpg',
       title: 'Técnica & Disciplina',
       desc: 'Formación individual enfocada en la postura correcta, afinación y control del arco desde la primera sesión.',
     },
     {
-      url: '/media__1782154465133.jpg',
+      url: 'media__1782154465133.jpg',
       title: 'Conciertos y Recitales',
       desc: 'Desarrolla la confianza tocando frente al público. Clases grupales y ensambles regulares en nuestra comunidad.',
     },
     {
-      url: '/media__1782154465098.jpg',
+      url: 'media__1782154465098.jpg',
       title: 'Certificaciones Oficiales',
       desc: 'Medimos tu progreso real. Evaluaciones de hitos académicos y entrega de diplomas oficiales por cada etapa aprobada.',
     },
     {
-      url: '/media__1782154465169.jpg',
+      url: 'media__1782154465169.jpg',
       title: 'Expresión Escénica',
       desc: 'Aprende a interpretar la música clásica y popular con tu propia voz artística y expresión emocional completa.',
     },

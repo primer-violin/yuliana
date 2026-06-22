@@ -11,7 +11,7 @@ export const VideoSection: React.FC = () => {
           <div className="feedback-ui-wrapper">
             <div className="feedback-video-player">
               <img 
-                src="/media__1782154465133.jpg" 
+                src="media__1782154465133.jpg" 
                 alt="Estudiante practicando violín" 
                 className="feedback-video-frame"
               />
