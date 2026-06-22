@@ -81,7 +81,7 @@ export const PhotoCarousel: React.FC = () => {
         </div>
 
         <div 
-          className="carousel-container"
+          className="carousel-container-compact"
           onMouseEnter={() => setIsPlaying(false)}
           onMouseLeave={() => setIsPlaying(true)}
         >
@@ -93,18 +93,14 @@ export const PhotoCarousel: React.FC = () => {
             >
               {slides.map((slide, index) => (
                 <div className="carousel-slide-item" key={index}>
-                  <div className="slide-content-grid">
-                    <div className="slide-image-col">
-                      <img src={slide.url} alt={slide.title} className="slide-img" />
-                    </div>
-                    <div className="slide-info-col">
-                      <span className="slide-number">0{index + 1} / 0{slides.length}</span>
+                  <div className="slide-image-container-compact">
+                    <img src={slide.url} alt={slide.title} className="slide-img-compact" />
+                    
+                    {/* Glass overlay strip containing details */}
+                    <div className="slide-overlay-glass">
+                      <span className="slide-number-compact">0{index + 1} / 0{slides.length}</span>
                       <h3>{slide.title}</h3>
-                      <p className="slide-desc">{slide.desc}</p>
-                      <div className="slide-quote-box">
-                        <span className="quote-icon">“</span>
-                        <p>La música es para el alma lo que la gimnasia es para el cuerpo. Educar a través del violín es dar a un niño herramientas de vida.</p>
-                      </div>
+                      <p>{slide.desc}</p>
                     </div>
                   </div>
                 </div>
