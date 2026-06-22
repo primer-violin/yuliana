@@ -33,6 +33,7 @@ export const EnrollmentForm: React.FC = () => {
     setErrorMessage('');
 
     try {
+      // 1. Save to Supabase (or mock database)
       const { error } = await supabase.from('inscriptions').insert([
         {
           representante_nombre: parentName,
@@ -46,6 +47,34 @@ export const EnrollmentForm: React.FC = () => {
       ]);
 
       if (error) throw error;
+
+      // 2. Send email notification via FormSubmit
+      const emailResponse = await fetch("https://formsubmit.co/ajax/yulianadenis899@gmail.com", {
+        method: "POST",
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          _subject: "✨ Nueva Preinscripción - Yuliana Violín Music ✨",
+          _captcha: "false",
+          "Nombre del Representante": parentName,
+          "Nombre del Alumno (Hijo/a)": childName,
+          "Edad del Alumno": `${childAge} años`,
+          "Teléfono / WhatsApp": phone,
+          "Correo de Contacto": email.trim() || "No especificado",
+          "Programa de Interés": program === 'iniciacion-musical' 
+            ? 'Iniciación Musical (4 a 7 años)' 
+            : program === 'violin-academico' 
+              ? 'Violín Académico (8 a 17 años)' 
+              : 'Teoría & Lenguaje Musical',
+          "Mensaje / Observaciones": message.trim() || "Ninguno"
+        })
+      });
+
+      if (!emailResponse.ok) {
+        throw new Error('No se pudo enviar la notificación por correo. Por favor, intente de nuevo.');
+      }
 
       setStatus('success');
       setParentName('');
