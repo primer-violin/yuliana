@@ -94,7 +94,13 @@ export const PhotoCarousel: React.FC = () => {
               {slides.map((slide, index) => (
                 <div className="carousel-slide-item" key={index}>
                   <div className="slide-image-container-compact">
-                    <img src={slide.url} alt={slide.title} className="slide-img-compact" />
+                    {/* Background blurred image to fill the wide card box */}
+                    <img src={slide.url} alt="" className="slide-img-blur-bg" />
+                    
+                    {/* Foreground uncropped image inside a gold-lined frame */}
+                    <div className="slide-img-frame">
+                      <img src={slide.url} alt={slide.title} className="slide-img-contain" />
+                    </div>
                     
                     {/* Glass overlay strip containing details */}
                     <div className="slide-overlay-glass">
