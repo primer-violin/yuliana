@@ -39,7 +39,7 @@ export const Hero: React.FC = () => {
           <div className="hero-trust">
             <div className="trust-item">
               <MapPin size={18} className="gold-text" />
-              <span>Santa Catalina, Estigarribia</span>
+              <span>Barrio Santa Catalina</span>
             </div>
             <div className="trust-item">
               <Calendar size={18} className="gold-text" />

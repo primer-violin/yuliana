@@ -110,7 +110,7 @@ export const ContactForm: React.FC = () => {
 
                 <div style={{ position: 'relative', zIndex: 10, marginTop: '1rem' }}>
                   <h4 style={{ color: 'var(--text-white)', fontSize: '1.1rem', marginBottom: '0.25rem' }}>Yuliana Violín Music</h4>
-                  <p style={{ color: 'var(--text-gold-light)', fontSize: '0.85rem', margin: 0 }}>Santa Catalina, Estigarribia</p>
+                  <p style={{ color: 'var(--text-gold-light)', fontSize: '0.85rem', margin: 0 }}>Barrio Santa Catalina</p>
                 </div>
               </div>
               
