@@ -18,7 +18,7 @@ export const Features: React.FC = () => {
       icon: <Layers size={36} />,
       title: 'Violín Académico',
       age: 'Niños y Jóvenes de 8 a 17 años',
-      desc: 'Formación instrumental formal. Nos enfocamos en la correcta postura corporal, agarre del arco, afinación y digitación en el violín. Avanzan a través de un repertorio clásico y folclórico paraguayo progresivo.',
+      desc: 'Nuestra formación instrumental formal en violín se centra en la técnica adecuada, desde la postura corporal y el agarre del arco hasta la afinación y la digitación. A medida que nuestros estudiantes progresan, tienen la oportunidad de explorar un amplio y diverso repertorio que combina lo clásico con lo moderno.',
       details: [
         { icon: <Clock size={16} />, text: 'Clases individuales y grupales' },
         { icon: <Users size={16} />, text: 'Seguimiento técnico riguroso' },
