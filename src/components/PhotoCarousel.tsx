@@ -95,11 +95,11 @@ export const PhotoCarousel: React.FC = () => {
                 <div className="carousel-slide-item" key={index}>
                   <div className="slide-image-container-compact">
                     {/* Background blurred image to fill the wide card box */}
-                    <img src={slide.url} alt="" className="slide-img-blur-bg" />
+                    <img src={`${import.meta.env.BASE_URL}${slide.url}`} alt="" className="slide-img-blur-bg" />
                     
                     {/* Foreground uncropped image inside a gold-lined frame */}
                     <div className="slide-img-frame">
-                      <img src={slide.url} alt={slide.title} className="slide-img-contain" />
+                      <img src={`${import.meta.env.BASE_URL}${slide.url}`} alt={slide.title} className="slide-img-contain" />
                     </div>
                     
                     {/* Glass overlay strip containing details */}

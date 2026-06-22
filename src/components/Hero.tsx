@@ -51,7 +51,7 @@ export const Hero: React.FC = () => {
         <div className="hero-image-container animate-fade-in">
           <div className="hero-image-wrapper">
             <img
-              src="media__1782154465074.jpg"
+              src={`${import.meta.env.BASE_URL}media__1782154465074.jpg`}
               alt="Profesora Yuliana Denis con violín"
               className="hero-image"
             />
