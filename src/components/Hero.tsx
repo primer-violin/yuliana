@@ -56,7 +56,7 @@ export const Hero: React.FC = () => {
               className="hero-image"
             />
             <div className="floating-badge badge-1">
-              <h4>Prof.</h4>
+              <h4>Teacher</h4>
               <p>Yuliana Denis</p>
             </div>
             <div className="floating-badge badge-2">

@@ -25,7 +25,7 @@ export const VideoSection: React.FC = () => {
             <div className="teacher-comment-card">
               <div className="teacher-avatar">YD</div>
               <div className="teacher-comment-content">
-                <h5>Prof. Yuliana Denis</h5>
+                <h5>Teacher Yuliana Denis</h5>
                 <p>“Mi mayor objetivo es que los niños no solo aprendan a tocar notas correctas, sino que sientan y expresen la música con alegría y libertad.”</p>
                 <div className="comment-timestamp">Directora • Yuliana Violín Music</div>
               </div>
