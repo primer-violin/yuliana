@@ -24,7 +24,7 @@ export const Hero: React.FC = () => {
       <div className="container hero-inner">
         <div className="hero-content animate-fade-in">
           <span className="hero-badge">Clases Presenciales • Dr. J. E. Estigarribia</span>
-          <h1>Despierta el Talento Musical de tus Hijos</h1>
+          <h1>Despierta tu Talento Musical</h1>
           <p>
             Formación artística integral en violín y lenguaje musical para niños y jóvenes. Con la guía cercana de la profesora Yuliana Denis, cultivamos la técnica, la disciplina y la sensibilidad artística desde la infancia.
           </p>
