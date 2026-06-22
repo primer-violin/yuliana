@@ -33,20 +33,26 @@ export const EnrollmentForm: React.FC = () => {
     setErrorMessage('');
 
     try {
-      // 1. Save to Supabase (or mock database)
-      const { error } = await supabase.from('inscriptions').insert([
-        {
-          representante_nombre: parentName,
-          alumno_nombre: childName,
-          alumno_edad: ageNum,
-          telefono: phone,
-          email: email.trim() || null,
-          programa: program,
-          mensaje: message.trim() || null,
-        }
-      ]);
+      // 1. Save to Supabase (or mock database) - wrapped to prevent DB failures from blocking the submission
+      try {
+        const { error } = await supabase.from('inscriptions').insert([
+          {
+            representante_nombre: parentName,
+            alumno_nombre: childName,
+            alumno_edad: ageNum,
+            telefono: phone,
+            email: email.trim() || null,
+            programa: program,
+            mensaje: message.trim() || null,
+          }
+        ]);
 
-      if (error) throw error;
+        if (error) {
+          console.error('Supabase DB insert warning:', error);
+        }
+      } catch (dbErr) {
+        console.error('Supabase DB connection failed:', dbErr);
+      }
 
       // 2. Send email notification via FormSubmit
       const emailResponse = await fetch("https://formsubmit.co/ajax/yulianadenis899@gmail.com", {
