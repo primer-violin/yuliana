@@ -12,7 +12,7 @@ export const VideoSection: React.FC = () => {
             <div className="feedback-video-player">
               <img 
                 src={`${import.meta.env.BASE_URL}media__1782154465133.jpg`} 
-                alt="Profesora Yuliana Denis en el recital" 
+                alt="Teacher Yuliana Denis en el recital" 
                 className="feedback-video-frame"
               />
               <div className="player-overlay">
@@ -49,10 +49,10 @@ export const VideoSection: React.FC = () => {
         </div>
 
         <div className="video-feedback-text animate-fade-in">
-          <span className="section-label">Nuestra Profesora</span>
+          <span className="section-label">Nuestra Teacher</span>
           <h2 className="title-accent">Clases con Yuliana Denis</h2>
           <p>
-            Soy **Yuliana Denis**, una apasionada profesora de música y violín dedicada a la formación artística de niños y jóvenes en el Barrio Santa Catalina, Dr. J. Eulogio Estigarribia.
+            Soy **Yuliana Denis**, una apasionada teacher de música y violín dedicada a la formación artística de niños y jóvenes en el Barrio Santa Catalina, Dr. J. Eulogio Estigarribia.
           </p>
           <p>
             Mi metodología se enfoca en hacer de la música un camino natural y enriquecedor. Combinando la disciplina técnica clásica italiana con actividades didácticas, nos aseguramos de que cada alumno desarrolle una postura sana, un oído afinado y una gran confianza escénica.

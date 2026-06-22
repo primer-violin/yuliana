@@ -43,7 +43,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
   const navItems = [
     { label: 'Inicio', id: 'inicio' },
     { label: 'Programas', id: 'programas' },
-    { label: 'Profesora', id: 'profesora' },
+    { label: 'Teacher', id: 'profesora' },
     { label: 'Galería', id: 'galeria' },
     { label: 'Inscripción', id: 'inscripcion' },
     { label: 'Preguntas', id: 'preguntas' },

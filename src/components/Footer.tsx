@@ -37,7 +37,7 @@ export const Footer: React.FC = () => {
               Yuliana <span>Violín Music</span>
             </a>
             <p className="footer-desc">
-              Clases presenciales de violín y música para niños y jóvenes. Formamos la técnica instrumental y la sensibilidad artística de la mano de la profesora Yuliana Denis en Paraguay.
+              Clases presenciales de violín y música para niños y jóvenes. Formamos la técnica instrumental y la sensibilidad artística de la mano de la Teacher Yuliana Denis en Paraguay.
             </p>
             <div className="footer-socials">
               <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
@@ -57,7 +57,7 @@ export const Footer: React.FC = () => {
             <ul>
               <li><a href="#inicio" onClick={(e) => handleScrollTo(e, 'inicio')}>Inicio</a></li>
               <li><a href="#programas" onClick={(e) => handleScrollTo(e, 'programas')}>Programas</a></li>
-              <li><a href="#profesora" onClick={(e) => handleScrollTo(e, 'profesora')}>Profesora</a></li>
+              <li><a href="#profesora" onClick={(e) => handleScrollTo(e, 'profesora')}>Teacher</a></li>
               <li><a href="#galeria" onClick={(e) => handleScrollTo(e, 'galeria')}>Galería</a></li>
             </ul>
           </div>

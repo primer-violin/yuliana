@@ -12,7 +12,7 @@ export const PhotoCarousel: React.FC = () => {
     {
       url: 'media__1782154465074.jpg',
       title: 'Clases Individuales',
-      desc: 'Enfoque técnico personalizado en el violín. Cada alumno recibe la guía uno a uno de la profesora Yuliana para desarrollar postura, afinación y control del arco.',
+      desc: 'Enfoque técnico personalizado en el violín. Cada alumno recibe la guía uno a uno de la Teacher Yuliana para desarrollar postura, afinación y control del arco.',
     },
     {
       url: 'media__1782154465133.jpg',
@@ -76,7 +76,7 @@ export const PhotoCarousel: React.FC = () => {
           <span className="section-label">Galería de Logros</span>
           <h2 className="title-accent">Nuestra Experiencia Educativa</h2>
           <p style={{ maxWidth: '600px', margin: '0 auto 3rem auto' }}>
-            Imágenes reales de la profesora Yuliana Denis y sus estudiantes en audiciones, clases prácticas y entregas de diplomas en Dr. J. Eulogio Estigarribia.
+            Imágenes reales de la Teacher Yuliana Denis y sus estudiantes en audiciones, clases prácticas y entregas de diplomas en Dr. J. Eulogio Estigarribia.
           </p>
         </div>
 

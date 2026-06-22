@@ -26,7 +26,7 @@ export const Hero: React.FC = () => {
           <span className="hero-badge">Clases Presenciales • Dr. J. E. Estigarribia</span>
           <h1>Despierta tu Talento Musical</h1>
           <p>
-            Formación artística integral en violín y lenguaje musical para niños y jóvenes. Con la guía cercana de la profesora Yuliana Denis, cultivamos la técnica, la disciplina y la sensibilidad artística desde la infancia.
+            Formación artística integral en violín y lenguaje musical para niños y jóvenes. Con la guía cercana de la Teacher Yuliana Denis, cultivamos la técnica, la disciplina y la sensibilidad artística desde la infancia.
           </p>
           <div className="hero-ctas">
             <button onClick={() => handleScrollTo('inscripcion')} className="btn btn-primary">
@@ -52,7 +52,7 @@ export const Hero: React.FC = () => {
           <div className="hero-image-wrapper">
             <img
               src={`${import.meta.env.BASE_URL}media__1782154465074.jpg`}
-              alt="Profesora Yuliana Denis con violín"
+              alt="Teacher Yuliana Denis con violín"
               className="hero-image"
             />
             <div className="floating-badge badge-1">
