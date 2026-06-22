@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Music, Menu, X } from 'lucide-react';
+import { Music, Menu, X, Phone } from 'lucide-react';
 
 interface NavbarProps {
   activeSection: string;
@@ -27,7 +27,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
     setIsMobileMenuOpen(false);
     const element = document.getElementById(id);
     if (element) {
-      const offset = 80; // height of fixed navbar
+      const offset = 90; // height of fixed navbar
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
@@ -42,11 +42,10 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
 
   const navItems = [
     { label: 'Inicio', id: 'inicio' },
-    { label: 'Método', id: 'metodo' },
+    { label: 'Programas', id: 'programas' },
+    { label: 'Profesora', id: 'profesora' },
     { label: 'Galería', id: 'galeria' },
-    { label: 'Progreso', id: 'progreso' },
-    { label: 'Kit Gratis', id: 'kit-gratis' },
-    { label: 'Contacto', id: 'contacto' },
+    { label: 'Inscripción', id: 'inscripcion' },
     { label: 'Preguntas', id: 'preguntas' },
   ];
 
@@ -54,8 +53,8 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
     <nav className={`navbar ${isScrolled ? 'navbar-scrolled' : ''}`}>
       <div className="container navbar-inner">
         <a href="#inicio" className="logo" onClick={(e) => handleLinkClick(e, 'inicio')}>
-          <Music size={28} />
-          Mi Primer <span>Violín</span>
+          <Music size={26} />
+          Yuliana <span>Violín Music</span>
         </a>
 
         {/* Desktop Links */}
@@ -73,12 +72,13 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           ))}
           <li>
             <a
-              href="#kit-gratis"
+              href="https://wa.me/595971418994"
+              target="_blank"
+              rel="noopener noreferrer"
               className="btn btn-primary"
-              style={{ padding: '0.5rem 1.2rem', fontSize: '0.85rem' }}
-              onClick={(e) => handleLinkClick(e, 'kit-gratis')}
+              style={{ padding: '0.6rem 1.4rem', fontSize: '0.85rem' }}
             >
-              Comienza Hoy
+              <Phone size={14} /> +595 971418994
             </a>
           </li>
         </ul>
@@ -89,7 +89,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label={isMobileMenuOpen ? 'Cerrar menú' : 'Abrir menú'}
         >
-          {isMobileMenuOpen ? <X size={26} /> : <Menu size={26} />}
+          {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
         {/* Mobile Slide-in Menu */}
@@ -105,11 +105,13 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
             </a>
           ))}
           <a
-            href="#kit-gratis"
+            href="https://wa.me/595971418994"
+            target="_blank"
+            rel="noopener noreferrer"
             className="btn btn-primary"
-            onClick={(e) => handleLinkClick(e, 'kit-gratis')}
+            style={{ marginTop: '1rem' }}
           >
-            Comienza Hoy
+            <Phone size={16} /> WhatsApp
           </a>
         </div>
       </div>

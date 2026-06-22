@@ -4,7 +4,7 @@ import { Hero } from './components/Hero';
 import { Features } from './components/Features';
 import { PhotoCarousel } from './components/PhotoCarousel';
 import { VideoSection } from './components/VideoSection';
-import { StarterKitForm } from './components/StarterKitForm';
+import { EnrollmentForm } from './components/EnrollmentForm';
 import { ContactForm } from './components/ContactForm';
 import { FaqSection } from './components/FaqSection';
 import { Footer } from './components/Footer';
@@ -13,7 +13,7 @@ function App() {
   const [activeSection, setActiveSection] = useState('inicio');
 
   useEffect(() => {
-    const sections = ['inicio', 'metodo', 'galeria', 'progreso', 'kit-gratis', 'contacto', 'preguntas'];
+    const sections = ['inicio', 'programas', 'profesora', 'galeria', 'inscripcion', 'preguntas', 'contacto'];
     
     const handleScrollSpy = () => {
       const scrollPosition = window.scrollY + 120; // adding offset for nav bar height
@@ -43,9 +43,9 @@ function App() {
       <Navbar activeSection={activeSection} />
       <Hero />
       <Features />
-      <PhotoCarousel />
       <VideoSection />
-      <StarterKitForm />
+      <PhotoCarousel />
+      <EnrollmentForm />
       <ContactForm />
       <FaqSection />
       <Footer />

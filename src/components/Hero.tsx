@@ -1,11 +1,11 @@
 import React from 'react';
-import { ArrowRight, BookOpen, ShieldCheck } from 'lucide-react';
+import { ArrowRight, Calendar, MapPin } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   const handleScrollTo = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      const offset = 80;
+      const offset = 90;
       const bodyRect = document.body.getBoundingClientRect().top;
       const elementRect = element.getBoundingClientRect().top;
       const elementPosition = elementRect - bodyRect;
@@ -23,27 +23,27 @@ export const Hero: React.FC = () => {
       <div className="gradient-overlay"></div>
       <div className="container hero-inner">
         <div className="hero-content animate-fade-in">
-          <span className="hero-badge">Tradición Italiana para Adultos</span>
-          <h1>Nunca es Tarde para Aprender Violín</h1>
+          <span className="hero-badge">Clases Presenciales • Dr. J. E. Estigarribia</span>
+          <h1>Despierta el Talento Musical de tus Hijos</h1>
           <p>
-            Descubre un método estructurado, secuencial y sin atajos. Diseñado específicamente para adultos que desean desarrollar una técnica sólida, control del arco y expresión musical auténtica, todo en español y a su propio ritmo.
+            Formación artística integral en violín y lenguaje musical para niños y jóvenes. Con la guía cercana de la profesora Yuliana Denis, cultivamos la técnica, la disciplina y la sensibilidad artística desde la infancia.
           </p>
           <div className="hero-ctas">
-            <button onClick={() => handleScrollTo('kit-gratis')} className="btn btn-primary">
-              Kit de Inicio Gratis <ArrowRight size={18} />
+            <button onClick={() => handleScrollTo('inscripcion')} className="btn btn-primary">
+              Inscribirse Ahora <ArrowRight size={18} />
             </button>
-            <button onClick={() => handleScrollTo('metodo')} className="btn btn-secondary">
-              Ver el Método
+            <button onClick={() => handleScrollTo('programas')} className="btn btn-secondary">
+              Ver Programas
             </button>
           </div>
           <div className="hero-trust">
             <div className="trust-item">
-              <ShieldCheck size={18} className="gold-text" />
-              <span>Garantía de progreso real</span>
+              <MapPin size={18} className="gold-text" />
+              <span>Santa Catalina, Estigarribia</span>
             </div>
             <div className="trust-item">
-              <BookOpen size={18} className="gold-text" />
-              <span>Soporte personalizado constante</span>
+              <Calendar size={18} className="gold-text" />
+              <span>Horarios Flexibles</span>
             </div>
           </div>
         </div>
@@ -51,17 +51,17 @@ export const Hero: React.FC = () => {
         <div className="hero-image-container animate-fade-in">
           <div className="hero-image-wrapper">
             <img
-              src="hero_violin_asset.png"
-              alt="Violín clásico de la academia italiana"
+              src="media__1782154465074.jpg"
+              alt="Profesora Yuliana Denis con violín"
               className="hero-image"
             />
             <div className="floating-badge badge-1">
-              <h4>100%</h4>
-              <p>En Español</p>
+              <h4>Prof.</h4>
+              <p>Yuliana Denis</p>
             </div>
             <div className="floating-badge badge-2">
-              <h4>Guía</h4>
-              <p>Paso a Paso</p>
+              <h4>Clases</h4>
+              <p>Presenciales</p>
             </div>
           </div>
         </div>

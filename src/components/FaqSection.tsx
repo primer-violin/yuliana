@@ -9,24 +9,24 @@ interface FAQItem {
 export const FaqSection: React.FC = () => {
   const faqs: FAQItem[] = [
     {
-      question: '¿Es muy tarde para aprender a tocar el violín si ya soy adulto?',
-      answer: '¡Para nada! Aunque existe el mito de que el violín debe aprenderse en la infancia, los adultos tienen grandes ventajas: mayor capacidad de autodisciplina, mejor comprensión de los conceptos teóricos y geométricos, y una motivación clara. Nuestro método está adaptado específicamente a la mentalidad de un adulto, omitiendo canciones infantiles y enfocándose en técnica real desde el día uno.',
+      question: '¿A partir de qué edad puede comenzar mi hijo/a a aprender violín?',
+      answer: 'Ofrecemos programas desde los 4 años de edad. Para los niños de 4 a 7 años, recomendamos el programa de Iniciación Musical, que estimula el oído y ritmo a través de juegos. A partir de los 8 años, pueden ingresar al programa formal de Violín Académico, donde desarrollan la técnica del instrumento con clases individuales.',
     },
     {
-      question: '¿Necesito conocimientos previos de música o saber leer partituras?',
-      answer: 'No necesitas saber absolutamente nada de música. Nuestro curso incluye un módulo inicial de nivelación donde aprenderás a leer partituras de forma progresiva, relacionando cada nota directamente con la posición de tus dedos en el diapasón de manera visual e intuitiva.',
+      question: '¿Es necesario que los padres estén presentes durante la clase?',
+      answer: 'Para la Iniciación Musical (4 a 7 años), alentamos a los padres a estar presentes, ya que esto ayuda a los pequeños a sentirse seguros y les permite a los tutores entender los juegos rítmicos para repetirlos en casa. Para alumnos de 8 años en adelante, los padres pueden esperar cómodamente en nuestra sala de espera.',
     },
     {
-      question: '¿Qué tipo de violín necesito comprar para comenzar?',
-      answer: 'Para adultos, se utiliza un violín de tamaño estándar 4/4 (tamaño completo). No necesitas gastar una fortuna; existen violines de estudio de excelente relación calidad-precio (entre $100 y $250 USD) que son perfectos para comenzar. En nuestro Kit de Inicio Gratuito incluimos una lista detallada con marcas recomendadas y accesorios esenciales (resina, almohadilla, afinador).',
+      question: '¿La academia provee el instrumento o debo comprar uno antes de empezar?',
+      answer: 'Contamos con violines de diversos tamaños en nuestras aulas (desde escalas pequeñas de 1/16 hasta tamaño completo 4/4) para que el alumno los use en sus primeras clases de diagnóstico. Sin embargo, para la práctica diaria en casa, es fundamental que el alumno tenga su propio instrumento. Antes de comprar, nosotros mediremos el brazo de tu hijo/a y te indicaremos el tamaño exacto necesario.',
     },
     {
-      question: '¿Cómo funciona la revisión de videos y el soporte técnico?',
-      answer: 'Al final de cada módulo práctico, tendrás un ejercicio de evaluación. Simplemente te grabas con tu teléfono móvil tocando dicho ejercicio y subes el video a tu zona de estudiante. Un profesor revisará tu video en un plazo máximo de 48 horas laborables y te enviará comentarios detallados en texto o video sobre tu afinación, postura corporal y agarre del arco.',
+      question: '¿Dónde están ubicados y cuáles son los horarios disponibles?',
+      answer: 'Nos encontramos en el Barrio Santa Catalina, Dr. J. Eulogio Estigarribia (ex Campo 9), Paraguay, sobre la Calle 1° de Marzo. Nuestras clases presenciales se imparten de lunes a viernes en horario vespertino (después del horario escolar) y los sábados por la mañana, coordinando horarios fijos para cada alumno.',
     },
     {
-      question: '¿Cuánto tiempo de práctica diario se recomienda?',
-      answer: 'En el violín, la constancia es mucho más valiosa que las sesiones maratónicas. Recomendamos una práctica de 20 a 30 minutos diarios, de 5 a 6 días a la semana. Este ritmo permite que tus músculos se adapten sin fatiga y que tu cerebro asimile la memoria motora de forma efectiva.',
+      question: '¿Cómo funciona la clase de diagnóstico gratuita?',
+      answer: 'Es una sesión presencial de 15 a 20 minutos donde el alumno tiene contacto con el violín por primera vez. Evaluamos su afinación básica, su coordinación y medimos su tamaño para recomendar el violín adecuado. Puedes solicitarla completando el formulario de Preinscripción en esta web y te escribiremos por WhatsApp para coordinar.',
     },
   ];
 
@@ -40,10 +40,10 @@ export const FaqSection: React.FC = () => {
     <section id="preguntas" className="section section-dark faq-section">
       <div className="container">
         <div className="title-center">
-          <span className="section-label">Resolviendo Dudas</span>
-          <h2 className="title-accent">Preguntas Frecuentes</h2>
+          <span className="section-label">Dudas Frecuentes</span>
+          <h2 className="title-accent">Preguntas de los Padres</h2>
           <p style={{ maxWidth: '600px', margin: '0 auto 4rem auto' }}>
-            Respuestas a las preguntas más habituales de los adultos que deciden dar el paso de aprender violín con nosotros.
+            Respuestas a las consultas habituales de los representantes al inscribir a sus hijos en nuestra academia.
           </p>
         </div>
 

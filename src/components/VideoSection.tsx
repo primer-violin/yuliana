@@ -1,75 +1,75 @@
 import React from 'react';
-import { Send, MessageSquare, CheckCircle, Video } from 'lucide-react';
+import { CheckCircle, Music, BookOpen, Mic } from 'lucide-react';
 
 export const VideoSection: React.FC = () => {
   return (
-    <section id="progreso" className="section section-mid video-feedback-section">
+    <section id="profesora" className="section section-mid video-feedback-section">
       <div className="gradient-overlay"></div>
       <div className="container video-feedback-inner">
         <div className="video-feedback-image animate-fade-in">
-          {/* Simulated Teacher Review Interface */}
+          {/* Visual Presentation of Yuliana on Stage */}
           <div className="feedback-ui-wrapper">
             <div className="feedback-video-player">
               <img 
                 src="media__1782154465133.jpg" 
-                alt="Estudiante practicando violín" 
+                alt="Profesora Yuliana Denis en el recital" 
                 className="feedback-video-frame"
               />
               <div className="player-overlay">
-                <span className="player-badge">Video del Alumno #04</span>
-                <span className="player-time">01:45</span>
+                <span className="player-badge">Presentación en Vivo</span>
+                <span className="player-time">Recital Académico</span>
               </div>
             </div>
             
-            {/* Overlay teacher annotation */}
+            {/* Annotation card with Yuliana's teaching philosophy */}
             <div className="teacher-comment-card">
-              <div className="teacher-avatar">MC</div>
+              <div className="teacher-avatar">YD</div>
               <div className="teacher-comment-content">
-                <h5>Maestro Corrector</h5>
-                <p>“Buen sonido. Mantén el codo derecho un poco más relajado al bajar el arco en la cuerda de Sol. Esto evitará tensiones innecesarias en la muñeca.”</p>
-                <div className="comment-timestamp">Minuto 01:22 • Corrección Técnica</div>
+                <h5>Prof. Yuliana Denis</h5>
+                <p>“Mi mayor objetivo es que los niños no solo aprendan a tocar notas correctas, sino que sientan y expresen la música con alegría y libertad.”</p>
+                <div className="comment-timestamp">Directora • Yuliana Violín Music</div>
               </div>
             </div>
 
             <div className="feedback-steps">
               <div className="mini-step">
-                <Video size={16} className="gold-text" />
-                <span>Graba tu práctica</span>
+                <Music size={16} className="gold-text" />
+                <span>Teoría Básica</span>
               </div>
               <div className="mini-step">
-                <Send size={16} className="gold-text" />
-                <span>Envía por la app</span>
+                <BookOpen size={16} className="gold-text" />
+                <span>Práctica Técnica</span>
               </div>
               <div className="mini-step">
-                <MessageSquare size={16} className="gold-text" />
-                <span>Recibe feedback</span>
+                <Mic size={16} className="gold-text" />
+                <span>Canto & Ritmo</span>
               </div>
             </div>
           </div>
         </div>
 
         <div className="video-feedback-text animate-fade-in">
-          <span className="section-label">Acompañamiento Sin Excepciones</span>
-          <h2 className="title-accent">El Maestro de Violín en tu Bolsillo</h2>
+          <span className="section-label">Nuestra Profesora</span>
+          <h2 className="title-accent">Clases con Yuliana Denis</h2>
           <p>
-            El mayor peligro de aprender violín por internet de forma autónoma es adquirir vicios posturales y errores de afinación que luego son muy difíciles de corregir.
+            Soy **Yuliana Denis**, una apasionada profesora de música y violín dedicada a la formación artística de niños y jóvenes en el Barrio Santa Catalina, Dr. J. Eulogio Estigarribia.
           </p>
           <p>
-            Con nuestro sistema de <strong>envío de videos</strong>, grabas tus ejercicios directamente desde tu móvil o webcam y los subes a la plataforma. Nuestro equipo de maestros revisa tu postura, el agarre del arco y tu afinación, enviándote un análisis personalizado con correcciones constructivas para tu práctica semanal.
+            Mi metodología se enfoca en hacer de la música un camino natural y enriquecedor. Combinando la disciplina técnica clásica italiana con actividades didácticas, nos aseguramos de que cada alumno desarrolle una postura sana, un oído afinado y una gran confianza escénica.
           </p>
 
           <ul className="feedback-bullets">
             <li>
               <CheckCircle size={20} className="gold-text" />
-              <span>Feedback honesto y personalizado, sin falsos elogios.</span>
+              <span>**Atención 1-a-1**: Corrección de postura y arco en tiempo real en cada clase.</span>
             </li>
             <li>
               <CheckCircle size={20} className="gold-text" />
-              <span>Sesiones grupales de preguntas y respuestas en vivo.</span>
+              <span>**Estimulación Auditiva y Vocal**: Clases que integran solfeo y práctica coral básica.</span>
             </li>
             <li>
               <CheckCircle size={20} className="gold-text" />
-              <span>Revisiones semanales para asegurar que practiques con confianza.</span>
+              <span>**Práctica Local y Social**: Clases presenciales para fomentar la amistad y el compañerismo.</span>
             </li>
           </ul>
         </div>

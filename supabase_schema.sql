@@ -1,38 +1,25 @@
--- Script SQL para configurar las tablas en el panel de Supabase
--- Copia y pega este código en la sección "SQL Editor" de tu proyecto de Supabase.
+-- Script SQL actualizado para clases presenciales de violín y música con Yuliana Denis
+-- Pega este código en el "SQL Editor" de tu panel de Supabase para configurar la base de datos.
 
--- 1. Tabla para suscriptores al "Kit de Inicio"
-CREATE TABLE IF NOT EXISTS leads (
+CREATE TABLE IF NOT EXISTS inscriptions (
   id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-  nombre TEXT NOT NULL,
-  email TEXT NOT NULL UNIQUE,
+  representante_nombre TEXT NOT NULL,
+  alumno_nombre TEXT NOT NULL,
+  alumno_edad INT NOT NULL,
+  telefono TEXT NOT NULL,
+  email TEXT,
+  programa TEXT NOT NULL,
+  mensaje TEXT,
   creado_en TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
 );
 
--- 2. Tabla para mensajes de contacto y asesorías
-CREATE TABLE IF NOT EXISTS contact_messages (
-  id UUID DEFAULT gen_random_uuid() PRIMARY KEY,
-  nombre TEXT NOT NULL,
-  email TEXT NOT NULL,
-  nivel_experiencia TEXT NOT NULL,
-  mensaje TEXT NOT NULL,
-  creado_en TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
-);
+-- Habilitar seguridad de nivel de fila (RLS)
+ALTER TABLE inscriptions ENABLE ROW LEVEL SECURITY;
 
--- 3. Habilitar la seguridad a nivel de fila (Row Level Security - RLS)
-ALTER TABLE leads ENABLE ROW LEVEL SECURITY;
-ALTER TABLE contact_messages ENABLE ROW LEVEL SECURITY;
-
--- 4. Crear políticas para permitir inserciones públicas (anon) en ambas tablas
-CREATE POLICY "Permitir inserciones públicas" ON leads
+-- Crear política para permitir inserciones públicas (anon)
+CREATE POLICY "Permitir inscripciones públicas" ON inscriptions
   FOR INSERT WITH CHECK (true);
 
-CREATE POLICY "Permitir inserciones públicas" ON contact_messages
-  FOR INSERT WITH CHECK (true);
-
--- 5. Opcional: Permitir lectura solo para administradores autenticados (opcional si lo gestionas desde el panel de Supabase)
-CREATE POLICY "Permitir lectura para usuarios autenticados" ON leads
-  FOR SELECT TO authenticated USING (true);
-
-CREATE POLICY "Permitir lectura para usuarios autenticados" ON contact_messages
+-- Crear política para que el administrador pueda leer los datos
+CREATE POLICY "Permitir lectura para usuarios autenticados" ON inscriptions
   FOR SELECT TO authenticated USING (true);

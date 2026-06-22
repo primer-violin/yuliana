@@ -11,23 +11,23 @@ export const PhotoCarousel: React.FC = () => {
   const slides: Slide[] = [
     {
       url: 'media__1782154465074.jpg',
-      title: 'Técnica & Disciplina',
-      desc: 'Formación individual enfocada en la postura correcta, afinación y control del arco desde la primera sesión.',
+      title: 'Clases Individuales',
+      desc: 'Enfoque técnico personalizado en el violín. Cada alumno recibe la guía uno a uno de la profesora Yuliana para desarrollar postura, afinación y control del arco.',
     },
     {
       url: 'media__1782154465133.jpg',
-      title: 'Conciertos y Recitales',
-      desc: 'Desarrolla la confianza tocando frente al público. Clases grupales y ensambles regulares en nuestra comunidad.',
+      title: 'Presentaciones en Público',
+      desc: 'Nuestros alumnos se presentan con orgullo en recitales locales, perdiendo el miedo escénico y compartiendo su música con la comunidad de Dr. J. E. Estigarribia.',
     },
     {
       url: 'media__1782154465098.jpg',
-      title: 'Certificaciones Oficiales',
-      desc: 'Medimos tu progreso real. Evaluaciones de hitos académicos y entrega de diplomas oficiales por cada etapa aprobada.',
+      title: 'Entrega de Certificados',
+      desc: 'Reconocemos la perseverancia y el progreso de los niños. Cada nivel aprobado concluye con una entrega oficial de diplomas para motivar su crecimiento.',
     },
     {
       url: 'media__1782154465169.jpg',
-      title: 'Expresión Escénica',
-      desc: 'Aprende a interpretar la música clásica y popular con tu propia voz artística y expresión emocional completa.',
+      title: 'Expresión Artística',
+      desc: 'Fomentamos una educación integral. Nuestros estudiantes no solo aprenden violín, sino también canto y lenguaje corporal para expresarse con libertad en el escenario.',
     },
   ];
 
@@ -74,9 +74,9 @@ export const PhotoCarousel: React.FC = () => {
       <div className="container">
         <div className="title-center">
           <span className="section-label">Galería de Logros</span>
-          <h2 className="title-accent">Nuestros Estudiantes en Acción</h2>
+          <h2 className="title-accent">Nuestra Experiencia Educativa</h2>
           <p style={{ maxWidth: '600px', margin: '0 auto 3rem auto' }}>
-            Una mirada real a las etapas de aprendizaje en nuestra academia, desde la práctica en el aula hasta las presentaciones en vivo y graduaciones.
+            Imágenes reales de la profesora Yuliana Denis y sus estudiantes en audiciones, clases prácticas y entregas de diplomas en Dr. J. Eulogio Estigarribia.
           </p>
         </div>
 
@@ -103,7 +103,7 @@ export const PhotoCarousel: React.FC = () => {
                       <p className="slide-desc">{slide.desc}</p>
                       <div className="slide-quote-box">
                         <span className="quote-icon">“</span>
-                        <p>El violín no es solo un instrumento; es una extensión de la disciplina y el arte personal interpretado con paciencia.</p>
+                        <p>La música es para el alma lo que la gimnasia es para el cuerpo. Educar a través del violín es dar a un niño herramientas de vida.</p>
                       </div>
                     </div>
                   </div>

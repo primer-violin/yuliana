@@ -1,42 +1,72 @@
 import React from 'react';
-import { Compass, Layers, Music4 } from 'lucide-react';
+import { Compass, Layers, Music4, Clock, Users, BookOpen } from 'lucide-react';
 
 export const Features: React.FC = () => {
-  const pillars = [
+  const programs = [
+    {
+      icon: <Music4 size={36} />,
+      title: 'Iniciación Musical',
+      age: 'Niños de 4 a 7 años',
+      desc: 'Clases dinámicas y grupales diseñadas para despertar el amor por la música. Aprenden ritmo a través de juegos, estimulación auditiva y sus primeros contactos con instrumentos de percusión y violín en miniatura.',
+      details: [
+        { icon: <Clock size={16} />, text: 'Sesiones de 45 minutos' },
+        { icon: <Users size={16} />, text: 'Grupos pequeños' },
+        { icon: <BookOpen size={16} />, text: 'Metodología lúdica' },
+      ],
+    },
     {
       icon: <Layers size={36} />,
-      title: 'Método Secuencial y Graduado',
-      desc: 'Todas las lecciones están numeradas y ordenadas progresivamente. Sabrás exactamente qué practicar hoy y qué objetivo debes cumplir antes de pasar al siguiente nivel, sin saltos confusos.',
+      title: 'Violín Académico',
+      age: 'Niños y Jóvenes de 8 a 17 años',
+      desc: 'Formación instrumental formal. Nos enfocamos en la correcta postura corporal, agarre del arco, afinación y digitación en el violín. Avanzan a través de un repertorio clásico y folclórico paraguayo progresivo.',
+      details: [
+        { icon: <Clock size={16} />, text: 'Clases individuales y grupales' },
+        { icon: <Users size={16} />, text: 'Seguimiento técnico riguroso' },
+        { icon: <BookOpen size={16} />, text: 'Preparación para recitales' },
+      ],
     },
     {
       icon: <Compass size={36} />,
-      title: 'Diseñado para Adultos',
-      desc: 'No aprenderás con canciones infantiles. Enfocamos la teoría musical y la práctica técnica en obras de repertorio real adaptadas, permitiéndote conectar emocionalmente con la música desde el inicio.',
-    },
-    {
-      icon: <Music4 size={36} />,
-      title: 'Herencia y Estilo Italiano',
-      desc: 'Inspirado en la gran tradición clásica de violín en Italia. Nos enfocamos en la belleza del sonido, el fraseo expresivo y el control del arco, logrando que tu violín cante con un tono rico y libre.',
+      title: 'Teoría & Lenguaje Musical',
+      age: 'Todos los niveles',
+      desc: 'Clases teórico-prácticas fundamentales para el violinista. Aprenden lectura de partituras (solfeo), entrenamiento del oído musical, teoría y apreciación musical, permitiéndoles leer y comprender la música de forma autónoma.',
+      details: [
+        { icon: <Clock size={16} />, text: 'Material didáctico adaptado' },
+        { icon: <Users size={16} />, text: 'Clases complementarias' },
+        { icon: <BookOpen size={16} />, text: 'Lectura a primera vista' },
+      ],
     },
   ];
 
   return (
-    <section id="metodo" className="section section-dark features-section">
+    <section id="programas" className="section section-dark features-section">
       <div className="container">
         <div className="title-center">
-          <span className="section-label">Nuestros Pilares</span>
-          <h2 className="title-accent">El Método "Mi Primer Violín"</h2>
+          <span className="section-label">Nuestros Programas</span>
+          <h2 className="title-accent">Formación Musical Estructurada</h2>
           <p style={{ maxWidth: '600px', margin: '0 auto 4rem auto' }}>
-            Aprender de forma online no significa aprender solo. Te proporcionamos la estructura, el contexto y la guía para avanzar con total claridad.
+            Ofrecemos clases diseñadas para cada etapa de desarrollo de tus hijos, garantizando un aprendizaje sólido y divertido.
           </p>
         </div>
 
         <div className="grid grid-3">
-          {pillars.map((pillar, index) => (
-            <div className="card pillar-card animate-fade-in" key={index}>
-              <div className="card-icon">{pillar.icon}</div>
-              <h3>{pillar.title}</h3>
-              <p>{pillar.desc}</p>
+          {programs.map((program, index) => (
+            <div className="card program-card animate-fade-in" key={index}>
+              <div className="card-icon">{program.icon}</div>
+              <h3>{program.title}</h3>
+              <span className="hero-badge" style={{ fontSize: '0.75rem', padding: '0.15rem 0.5rem', marginBottom: '1.2rem', textTransform: 'none', borderBottom: 'none', border: '1px solid var(--gold-accent)' }}>
+                {program.age}
+              </span>
+              <p>{program.desc}</p>
+              
+              <div className="program-details">
+                {program.details.map((detail, idx) => (
+                  <div className="detail-item" key={idx}>
+                    <span className="gold-text">{detail.icon}</span>
+                    <span>{detail.text}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           ))}
         </div>
@@ -44,16 +74,16 @@ export const Features: React.FC = () => {
         {/* Dynamic Highlight stats section */}
         <div className="stats-container animate-fade-in">
           <div className="stat-item">
-            <h4>+200</h4>
-            <p>Lecciones en Video HD</p>
+            <h4>+5 Años</h4>
+            <p>Formando Jóvenes Talentos</p>
           </div>
           <div className="stat-item">
-            <h4>1-a-1</h4>
-            <p>Retroalimentación Directa</p>
+            <h4>Presencial</h4>
+            <p>Interacción y Cuidado Real</p>
           </div>
           <div className="stat-item">
             <h4>100%</h4>
-            <p>Alumnos Adultos</p>
+            <p>Atención Personalizada</p>
           </div>
         </div>
       </div>
